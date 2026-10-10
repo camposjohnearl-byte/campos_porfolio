@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[YOUR NAME] | BSIT Portfolio</title>
+<meta name="description" content="BSIT Industry-Ready Portfolio - Datamex College of Saint Adeline">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Bootstrap & Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+<!-- Custom Styles -->
+<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<!-- Sticky Glassmorphic Navbar -->
+<header class="nav">
+  <div class="container nav-in">
+    <a class="brand" href="#home">
+      <div class="brand-badge"><i class="bi bi-code-slash"></i></div>
+      <span data-name>[YOUR NAME]</span>
+    </a>
+    <button id="menuBtn" class="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav aria-label="Main Navigation">
+      <ul id="menu" class="menu">
+        <li><a href="#home"><i class="bi bi-house-door me-1"></i> Home</a></li>
+        <li><a href="about.html"><i class="bi bi-person me-1"></i> Profile</a></li>
+        <li><a href="#skills"><i class="bi bi-lightning me-1"></i> Skills</a></li>
+        <li><a href="#projects"><i class="bi bi-grid-1x2 me-1"></i> Projects</a></li>
+        <li><a href="#problem-solving"><i class="bi bi-tools me-1"></i> Problem-Solving</a></li>
+        <li><a href="#employability"><i class="bi bi-briefcase me-1"></i> Employability</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-person me-1"></i> Resume</a></li>
+        <li><a href="#certificates"><i class="bi bi-award me-1"></i> Certificates</a></li>
+        <li><a href="#github"><i class="bi bi-github me-1"></i> GitHub</a></li>
+        <li><a href="contact.html"><i class="bi bi-envelope me-1"></i> Contact</a></li>
+        <li><a href="#reflection"><i class="bi bi-journal-text me-1"></i> Reflection</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<!-- 1. HOME / HERO -->
+<section id="home" class="hero">
+  <div class="container reveal">
+    <div class="hero-status">
+      <span class="pulse-dot"></span>
+      <span>Available for IT Roles & Capstone Placement</span>
+    </div>
+    <h1 data-name>JOHN EARL P. CAMPOS</h1>
+    <div class="title">
+      <i class="bi bi-terminal-fill"></i>
+      <span>[PROFESSIONAL TITLE, e.g. Junior Full-Stack Developer]</span>
+    </div>
+    <p class="lead">I am a BSIT graduate with skills in [SKILL 1], [SKILL 2], and [SKILL 3]. I am interested in pursuing a career as a [CAREER].</p>
+    
+    <div class="btns">
+      <a class="btn-a" href="#projects">
+        <i class="bi bi-folder-check"></i> VIEW MY PROJECTS
+      </a>
+      <a class="btn-o" href="resume.pdf" download="Resume.pdf">
+        <i class="bi bi-download"></i> DOWNLOAD RESUME
+      </a>
+      <a class="btn-o" href="contact.html">
+        <i class="bi bi-chat-dots"></i> GET IN TOUCH
+      </a>
+    </div>
+
+    <div class="stats">
+      <a class="card card-hover stat-link" href="#skills" aria-label="Go to Skills section">
+        <div class="stat-icon"><i class="bi bi-cpu-fill"></i></div>
+        <div>
+          <strong id="hlSkills">0</strong>
+          <span>Verified Skills with Evidence</span>
+        </div>
+      </a>
+      <a class="card card-hover stat-link" href="#projects" aria-label="Go to Projects section">
+        <div class="stat-icon"><i class="bi bi-layers-fill"></i></div>
+        <div>
+          <strong id="hlProjects">0</strong>
+          <span>Projects Documented</span>
+        </div>
+      </a>
+      <a class="card card-hover stat-link" id="hlContact" href="contact.html" aria-label="Go to Contact page">
+        <div class="stat-icon" style="background: rgba(16, 185, 129, 0.12); border-color: rgba(16, 185, 129, 0.25); color: #34d399;">
+          <i class="bi bi-envelope-check-fill"></i>
+        </div>
+        <div>
+          <strong>Contact Me</strong>
+          <span>Open for Opportunities</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 3. TECHNICAL SKILLS -->
+<section id="skills" class="alt">
+  <div class="container reveal">
+    <div class="section-header">
+      <div class="section-tag"><i class="bi bi-lightning-charge-fill"></i> 02 // PROFICIENCY</div>
+      <h2>Technical Skills</h2>
+      <p class="section-desc">Categorized core proficiencies backed by practical evidence. Only skills with verifiable project claims are listed.</p>
+    </div>
+
+    <!-- Filter Segmented Control -->
+    <div id="filters" class="filters" role="group" aria-label="Filter skills by category"></div>
+    
+    <!-- Skills Grid -->
+    <div id="skillGrid" class="grid3"></div>
+  </div>
+</section>
+
+<!-- 4. PROJECTS -->
+<section id="projects">
+  <div class="container reveal">
+    <div class="section-header">
+      <div class="section-tag"><i class="bi bi-layers-fill"></i> 03 // PORTFOLIO</div>
+      <h2>Featured Projects</h2>
+      <p class="section-desc">End-to-end applications demonstrating system design, database architecture, CRUD operations, and responsive interfaces.</p>
+    </div>
+
+    <div id="projectGrid" class="grid3"></div>
+  </div>
+</section>
+
+<!-- 5. PROBLEM-SOLVING & DEFENSIVE SECURITY -->
+<section id="problem-solving" class="alt">
+  <div class="container reveal">
+    <div class="section-header">
+      <div class="section-tag"><i class="bi bi-tools"></i> 04 // ENGINEERING & DEFENSE</div>
+      <h2>Problem-Solving & Cybersecurity</h2>
+      <p class="section-desc">Diagnostic case studies, defensive application security practices, and verified AI literacy logs.</p>
+    </div>
+
+    <!-- Troubleshooting Accordion -->
+    <h3 style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.25rem;">
+      <i class="bi bi-wrench-adjustable-circle text-primary"></i> System Troubleshooting Cases
+    </h3>
+    <div id="cases" class="acc"></div>
+
+    <!-- Cybersecurity Case Study -->
+    <div class="gap">
+      <div class="security-banner">
+        <div>
+          <span class="security-tag"><i class="bi bi-shield-exclamation"></i> OWASP TOP 10 (A03:2021) // DEFENSIVE CASE STUDY</span>
+          <h3 style="margin: 0.4rem 0 0.2rem; color: #fff;">Cybersecurity Case Study: SQL Injection (Defensive)</h3>
+          <p class="note" style="margin: 0;">Comprehensive breakdown of injection mechanics, vulnerability vectors, and parameterized defense.</p>
+        </div>
+        <span class="tag tag-cyan"><i class="bi bi-shield-lock-fill"></i> Defensive Engineering</span>
+      </div>
+
+      <!-- Visual Terminal Code Comparison -->
+      <div class="terminal">
+        <div class="terminal-bar">
+          <div class="terminal-dots">
+            <span class="terminal-dot dot-red"></span>
+            <span class="terminal-dot dot-yellow"></span>
+            <span class="terminal-dot dot-green"></span>
+          </div>
+          <span class="terminal-title">defensive_security_audit.sql</span>
+          <span></span>
+        </div>
+        <div class="terminal-body">
+          <div class="code-vuln">
+            // VULNERABLE: Direct concatenation allows query tampering<br>
+            String query = "SELECT * FROM users WHERE username = '" + userInput + "' AND pass = '" + pass + "'";
+          </div>
+          <div class="code-safe">
+            // SECURE: Parameterized query (Prepared Statements) treats input strictly as data<br>
+            PreparedStatement stmt = conn.prepareStatement("SELECT * FROM users WHERE username = ? AND pass = ?");<br>
+            stmt.setString(1, userInput);<br>
+            stmt.setString(2, pass);
+          </div>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div class="card card-hover">
+          <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem;">
+            <i class="bi bi-bug-fill text-danger"></i>
+            <h4 style="margin:0;">What is the vulnerability?</h4>
+          </div>
+          <p>SQL Injection happens when an application puts untrusted user input directly into a database query string, causing the input to be parsed and executed as SQL instructions instead of literal data.</p>
+        </div>
+
+        <div class="card card-hover">
+          <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem;">
+            <i class="bi bi-signpost-split-fill text-warning"></i>
+            <h4 style="margin:0;">How can it happen?</h4>
+          </div>
+          <p>It occurs when database queries are constructed by joining raw strings from forms, URL query parameters, or HTTP headers without strict server-side validation, type checking, or parameter binding.</p>
+        </div>
+
+        <div class="card card-hover">
+          <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem;">
+            <i class="bi bi-exclamation-octagon-fill text-danger"></i>
+            <h4 style="margin:0;">What are the risks?</h4>
+          </div>
+          <p>Catastrophic data exfiltration, database corruption or loss, administrative authentication bypass, compliance penalties (e.g. GDPR/DPA), and irreparable damage to organization reputation.</p>
+        </div>
+
+        <div class="card card-hover">
+          <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem;">
+            <i class="bi bi-shield-check text-success"></i>
+            <h4 style="margin:0;">How can developers prevent it?</h4>
+          </div>
+          <p>Enforce parameterized queries (Prepared Statements), employ Object-Relational Mappers (ORMs), apply strict server-side input allowlisting, and sanitize all data outputs.</p>
+        </div>
+
+        <div class="card span2">
+          <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem;">
+            <i class="bi bi-lock-fill text-info"></i>
+            <h4 style="margin:0;">Security practices to implement</h4>
+          </div>
+          <ul class="security-list">
+            <li><i class="bi bi-check2-circle"></i> <div><strong>Least-Privilege Database Accounts:</strong> Restrict database users so web applications cannot execute DROP or administrative schema mutations.</div></li>
+            <li><i class="bi bi-check2-circle"></i> <div><strong>Cryptographic Hashing:</strong> Protect authentication credentials with salt and Argon2/Bcrypt; return generic authentication error messages.</div></li>
+            <li><i class="bi bi-check2-circle"></i> <div><strong>Strict Server-Side Validation:</strong> Never trust client-side validation alone; sanitize and cast all incoming payloads.</div></li>
+            <li><i class="bi bi-check2-circle"></i> <div><strong>Automated Audits & Dependency Management:</strong> Conduct regular static code analysis (SAST) and patch vulnerabilities promptly.</div></li>
+          </ul>
+          <p class="note" style="margin-top: 1rem;"><i class="bi bi-pencil-square"></i> [Add how you applied defensive parameterization in your own project.]</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI Literacy Evidence -->
+    <div class="gap">
+      <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; margin-bottom:1.25rem;">
+        <h3 style="display:flex; align-items:center; gap:0.6rem; margin:0;">
+          <i class="bi bi-robot text-primary"></i> AI Literacy & Verification Evidence
+        </h3>
+        <span class="tag tag-cyan"><i class="bi bi-check-all"></i> Verified Workflows</span>
+      </div>
+
+      <div class="table-wrap">
+        <table class="tbl">
+          <caption class="sr">AI usage log</caption>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Task</th>
+              <th>AI Assistance</th>
+              <th>My Verification / Result</th>
+            </tr>
+          </thead>
+          <tbody id="aiLog"></tbody>
+        </table>
+      </div>
+
+      <div class="grid2">
+        <div class="card card-hover">
+          <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.5rem;">
+            <i class="bi bi-stars text-primary"></i>
+            <h4 style="margin:0;">What did AI help me accomplish?</h4>
+          </div>
+          <p>[Explain how AI assisted your workflow: code boilerplates, debugging obscure syntax errors, generating mock datasets, or exploring algorithmic alternatives.]</p>
+        </div>
+
+        <div class="card card-hover">
+          <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.5rem;">
+            <i class="bi bi-patch-check-fill text-success"></i>
+            <h4 style="margin:0;">What did I personally verify?</h4>
+          </div>
+          <p>[Detail the manual tests, line-by-line code review, test case executions, and documentation checks you performed to validate correctness.]</p>
+        </div>
+
+        <div class="card card-hover">
+          <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.5rem;">
+            <i class="bi bi-lightbulb-fill text-warning"></i>
+            <h4 style="margin:0;">What did I learn?</h4>
+          </div>
+          <p>[Reflect on how utilizing AI deepened your architectural understanding and improved your prompt engineering and code review rigor.]</p>
+        </div>
+
+        <div class="card card-hover">
+          <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.5rem;">
+            <i class="bi bi-exclamation-triangle-fill text-danger"></i>
+            <h4 style="margin:0;">What limitations or errors did I find?</h4>
+          </div>
+          <p>[Discuss hallucinated libraries, outdated deprecations, or logic oversights you caught and resolved through independent critical analysis.]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. EMPLOYABILITY -->
+<section id="employability">
+  <div class="container reveal">
+    <div class="section-header">
+      <div class="section-tag"><i class="bi bi-briefcase-fill"></i> 05 // READINESS</div>
+      <h2>Employability & Career Plan</h2>
+      <p class="section-desc">Professional readiness assessments, mock evaluation records, and structured milestones for IT industry growth.</p>
+    </div>
+
+    <!-- 3 Milestone Cards -->
+    <div class="grid3">
+      <div class="card card-hover">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
+          <span class="tag tag-purple"><i class="bi bi-person-check"></i> Interview 01</span>
+          <span class="tag tag-cyan">Evaluated</span>
+        </div>
+        <h4>Mock Job Interview</h4>
+        <p style="color: var(--text-muted); font-size: 0.92rem;">Status: [Done / Scheduled]<br>Date: [DATE]</p>
+        <a class="btn-o btn-sm" href="[PROOF LINK]" target="_blank" rel="noopener" style="margin-top: auto; width: fit-content;">
+          <i class="bi bi-box-arrow-up-right"></i> View Proof
+        </a>
+      </div>
+
+      <div class="card card-hover">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
+          <span class="tag tag-purple"><i class="bi bi-code-slash"></i> Interview 02</span>
+          <span class="tag tag-cyan">Evaluated</span>
+        </div>
+        <h4>Technical Interview</h4>
+        <p style="color: var(--text-muted); font-size: 0.92rem;">Status: [Done / Scheduled]<br>Date: [DATE]</p>
+        <a class="btn-o btn-sm" href="[PROOF LINK]" target="_blank" rel="noopener" style="margin-top: auto; width: fit-content;">
+          <i class="bi bi-box-arrow-up-right"></i> View Proof
+        </a>
+      </div>
+
+      <div class="card card-hover">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
+          <span class="tag tag-purple"><i class="bi bi-mortarboard"></i> Defense</span>
+          <span class="tag tag-cyan">Evaluated</span>
+        </div>
+        <h4>Project Defense</h4>
+        <p style="color: var(--text-muted); font-size: 0.92rem;">Status: [Done / Scheduled]<br>Date: [DATE]</p>
+        <a class="btn-o btn-sm" href="[PROOF LINK]" target="_blank" rel="noopener" style="margin-top: auto; width: fit-content;">
+          <i class="bi bi-box-arrow-up-right"></i> View Proof
+        </a>
+      </div>
+    </div>
+
+    <!-- Professional Communication -->
+    <div class="card gap">
+      <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem;">
+        <i class="bi bi-chat-left-text-fill text-primary" style="font-size: 1.3rem;"></i>
+        <h3 style="margin: 0;">Professional Communication</h3>
+      </div>
+      <p style="line-height: 1.8;">
+        [Describe how you communicate professionally across various contexts: technical documentation, pull request reviews, cross-functional collaboration, client briefings, and team presentations.]
+      </p>
+      
+      <div class="grid3 mt-3">
+        <div class="acc-block">
+          <div class="acc-block-title info"><i class="bi bi-journal-code"></i> Technical Documentation</div>
+          <p style="margin: 0; font-size: 0.88rem;">Clear README guides, API endpoints, schema diagrams, and architecture decisions.</p>
+        </div>
+        <div class="acc-block">
+          <div class="acc-block-title info"><i class="bi bi-people-fill"></i> Agile Teamwork</div>
+          <p style="margin: 0; font-size: 0.88rem;">Active standup participation, constructive PR critiques, and empathetic pair programming.</p>
+        </div>
+        <div class="acc-block">
+          <div class="acc-block-title info"><i class="bi bi-easel-fill"></i> Stakeholder Briefings</div>
+          <p style="margin: 0; font-size: 0.88rem;">Translating technical complexity into executive business benefits and product value.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- IT Career Development Plan -->
+    <div class="card gap">
+      <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; margin-bottom:1rem;">
+        <div style="display:flex; align-items:center; gap:0.5rem;">
+          <i class="bi bi-graph-up-arrow text-success" style="font-size: 1.3rem;"></i>
+          <h3 style="margin:0;">IT Career Development Plan</h3>
+        </div>
+        <span class="tag tag-cyan"><i class="bi bi-compass"></i> Strategic Trajectory</span>
+      </div>
+
+      <!-- Preserved Definition List for grading requirements -->
+      <dl class="info">
+        <dt>Target Position</dt><dd>[POSITION, e.g. Associate Software Engineer / Junior Web Developer]</dd>
+        <dt>Target IT Field</dt><dd>[FIELD, e.g. Full-Stack Web Development / Cloud Infrastructure]</dd>
+        <dt>Current Skills</dt><dd>[SKILLS, e.g. HTML5, CSS3, JavaScript ES6+, Bootstrap, SQL, Git]</dd>
+        <dt>Skills to Improve</dt><dd>[SKILLS, e.g. TypeScript, Advanced Data Structures, Docker Containerization]</dd>
+        <dt>Technologies to Learn</dt><dd>[TECHNOLOGIES, e.g. React/Next.js, Node.js/Express, PostgreSQL, AWS]</dd>
+        <dt>Certifications</dt><dd>[CERTIFICATIONS, e.g. AWS Certified Cloud Practitioner / CompTIA Security+]</dd>
+        <dt>6-Month Goal</dt><dd>[GOAL, e.g. Secure a junior developer role and ship first production feature]</dd>
+        <dt>1-Year Goal</dt><dd>[GOAL, e.g. Attain industry cloud certification and mentor junior apprentices]</dd>
+        <dt>3-Year Goal</dt><dd>[GOAL, e.g. Advance to Mid-level Software Engineer leading full feature lifecycles]</dd>
+      </dl>
+
+      <!-- Visual 3-Stage Milestone Roadmap -->
+      <div class="roadmap">
+        <div class="roadmap-step">
+          <div class="roadmap-step-title"><i class="bi bi-flag-fill"></i> Stage 1: 0 - 6 Months</div>
+          <h4 style="font-size: 1.05rem; margin-bottom: 0.35rem;">Industry Onboarding & Foundations</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">Integrate into an engineering team, adhere to production CI/CD workflows, and resolve first critical bug tickets.</p>
+        </div>
+        <div class="roadmap-step" style="border-left-color: var(--cyan);">
+          <div class="roadmap-step-title" style="color: var(--cyan);"><i class="bi bi-trophy-fill"></i> Stage 2: 1 Year</div>
+          <h4 style="font-size: 1.05rem; margin-bottom: 0.35rem;">Certification & Domain Mastery</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">Obtain official vendor credentials (AWS/Cisco), master complex backend state management, and lead modular feature sprints.</p>
+        </div>
+        <div class="roadmap-step" style="border-left-color: var(--secondary);">
+          <div class="roadmap-step-title" style="color: var(--secondary);"><i class="bi bi-rocket-takeoff-fill"></i> Stage 3: 3 Years</div>
+          <h4 style="font-size: 1.05rem; margin-bottom: 0.35rem;">Mid-Level Engineer & Mentorship</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">Spearhead application architectures, optimize distributed databases, and mentor oncoming BSIT graduates.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. RESUME -->
+<section id="resume" class="alt">
+  <div class="container reveal">
+    <div class="section-header">
+      <div class="section-tag"><i class="bi bi-file-earmark-person-fill"></i> 06 // CURRICULUM VITAE</div>
+      <h2>Resume</h2>
+      <p class="section-desc">Interactive document preview and instant download link formatted to modern IT recruitment standards.</p>
+    </div>
+
+    <div class="card resume-card" id="resumeCard">
+      <!-- Window Title Bar -->
+      <div class="resume-window-bar">
+        <div class="resume-meta">
+          <span style="display:flex; gap:6px;">
+            <span class="terminal-dot dot-red"></span>
+            <span class="terminal-dot dot-yellow"></span>
+            <span class="terminal-dot dot-green"></span>
+          </span>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:0.85rem; color:#fff;">resume.pdf</span>
+          <span class="tag" style="font-size:0.75rem;"><i class="bi bi-file-pdf-fill text-danger"></i> PDF Document</span>
+        </div>
+        <p class="note" id="resumeNote" style="margin: 0;">Preview below. Save your file as <strong>resume.pdf</strong> in this folder.</p>
+        <div class="btns" style="margin: 0;">
+          <a class="btn-a btn-sm" href="resume.pdf" download="Resume.pdf">
+            <i class="bi bi-download"></i> Download Resume
+          </a>
+          <a class="btn-o btn-sm" href="resume.pdf" target="_blank" rel="noopener">
+            <i class="bi bi-box-arrow-up-right"></i> Open in New Tab
+          </a>
+        </div>
+      </div>
+
+      <object data="resume.pdf#toolbar=0&view=FitH" type="application/pdf" class="pdf" aria-label="One-page resume preview">
+        <div style="text-align: center; padding: 4rem 1rem;">
+          <i class="bi bi-file-earmark-pdf text-primary" style="font-size: 3rem;"></i>
+          <h4 style="margin: 1rem 0 0.5rem;">PDF Preview Unavailable in this Browser View</h4>
+          <p class="note">You can download the full PDF document using the action button above.</p>
+          <a class="btn-a" href="resume.pdf" download="Resume.pdf"><i class="bi bi-download"></i> Download Resume PDF</a>
+        </div>
+      </object>
+    </div>
+  </div>
+</section>
+
+<!-- 8. CERTIFICATES -->
+<section id="certificates">
+  <div class="container reveal">
+    <div class="section-header">
+      <div class="section-tag"><i class="bi bi-award-fill"></i> 07 // CREDENTIALS</div>
+      <h2>Certificates & Achievements</h2>
+      <p class="section-desc">Industry credentials, online course completions, and collegiate honors validating technical competence.</p>
+    </div>
+    
+    <div id="certGrid" class="grid3"></div>
+  </div>
+</section>
+
+<!-- 9. GITHUB -->
+<section id="github" class="alt">
+  <div class="container reveal">
+    <div class="section-header">
+      <div class="section-tag"><i class="bi bi-git"></i> 08 // CODE REPOSITORIES</div>
+      <h2>GitHub Repositories</h2>
+      <p class="section-desc">Open-source code repositories, version control commits, and collaborative projects on GitHub.</p>
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+      <a class="btn-o" href="[GITHUB PROFILE URL]" target="_blank" rel="noopener">
+        <i class="bi bi-github"></i> Visit My GitHub Profile <i class="bi bi-arrow-right ms-1"></i>
+      </a>
+    </div>
+
+    <div id="repoGrid" class="grid3"></div>
+  </div>
+</section>
+
+<!-- 11. REFLECTION -->
+<section id="reflection" class="alt">
+  <div class="container reveal">
+    <div class="section-header">
+      <div class="section-tag"><i class="bi bi-journal-richtext"></i> 10 // SYNTHESIS</div>
+      <h2>Reflection</h2>
+      <p class="section-desc">Comprehensive reflection on growth, technical obstacles overcome, and readiness for the technology sector.</p>
+    </div>
+
+    <div class="card prose">
+      <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:1.5rem;">
+        <span class="tag tag-purple"><i class="bi bi-clock-history"></i> Capstone Essay</span>
+        <span class="tag tag-cyan">500 - 800 Words Required</span>
+      </div>
+
+      <p style="font-size: 1.08rem; line-height: 1.85; color: var(--text);">
+        [Write 500-800 words answering: What did I know about IT before BSIT? What were the most important things I learned? Which project taught me the most and why? What technical difficulty challenged me most? How have my IT skills changed? What skills do I still need to improve? What kind of IT professional do I want to become? Why am I ready to begin my career in IT?]
+      </p>
+
+      <div class="acc-grid mt-4">
+        <div class="acc-block">
+          <div class="acc-block-title info"><i class="bi bi-check2"></i> Reflection Prompt 1</div>
+          <p style="margin: 0; font-size: 0.88rem;">Evolution from beginner curiosity to engineering discipline throughout the BSIT curriculum.</p>
+        </div>
+        <div class="acc-block">
+          <div class="acc-block-title info"><i class="bi bi-check2"></i> Reflection Prompt 2</div>
+          <p style="margin: 0; font-size: 0.88rem;">Analysis of technical roadblocks, algorithmic hurdles, and perseverance strategies developed.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+      <span class="brand-badge" style="width: 26px; height: 26px; font-size: 0.85rem;"><i class="bi bi-code-slash"></i></span>
+      <span data-name style="font-size: 1.05rem; color: #fff;">[YOUR NAME]</span>
+    </div>
+    <div>BSIT Industry-Ready Portfolio &bull; Datamex College of Saint Adeline &bull; &copy; <span id="year"></span></div>
+    <div class="footer-badge">Designed with Modern Cyber-Minimalist Aesthetic</div>
+  </div>
+</footer>
+
+<!-- Back to Top Floating Button -->
+<button id="toTop" class="top" aria-label="Back to top">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<!-- Project Details Modal -->
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle" hidden>
+  <div class="modal-box">
+    <button id="mClose" class="m-close" aria-label="Close details dialog">
+      <i class="bi bi-x-lg"></i>
+    </button>
+    <div id="mBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
