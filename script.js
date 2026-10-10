@@ -118,9 +118,9 @@ const AI_LOG = [
 const CERTS = [
   { title: '[CERTIFICATE TITLE 1]', issuer: '[ISSUER, e.g. Cisco / AWS / Coursera]', date: '[DATE]', link: '[PROOF LINK]' },
   { title: '[CERTIFICATE TITLE 2]', issuer: '[ISSUER, e.g. CompTIA / freeCodeCamp]', date: '[DATE]', link: '[PROOF LINK]' },
-  { title: '[ACADEMIC ACHIEVEMENT]', issuer: 'Datamex College of Saint Adeline', date: '[DATE]', link: '[PROOF LINK]' }
-  { title: '[ACADEMIC ACHIEVEMENT]', issuer: 'Datamex College of Saint Adeline', date: '[DATE]', link: '[PROOF LINK]' }
-  { title: '[ACADEMIC ACHIEVEMENT]', issuer: 'Datamex College of Saint Adeline', date: '[DATE]', link: '[PROOF LINK]' }
+  { title: '[ACADEMIC ACHIEVEMENT]', issuer: 'Datamex College of Saint Adeline', date: '[DATE]', link: '[PROOF LINK]' },
+  { title: '[ACADEMIC ACHIEVEMENT]', issuer: 'Datamex College of Saint Adeline', date: '[DATE]', link: '[PROOF LINK]' },
+  { title: '[ACADEMIC ACHIEVEMENT]', issuer: 'Datamex College of Saint Adeline', date: '[DATE]', link: '[PROOF LINK]' },
 ];
 
 const REPOS = [
