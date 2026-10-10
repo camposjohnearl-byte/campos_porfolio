@@ -8,7 +8,7 @@ const OWNER = {
   email: 'firstname.lastname@gmail.com',
   title: '[PROFESSIONAL TITLE, e.g. Junior Full-Stack Developer]',
   lead: 'BSIT Graduate specialized in building high-performance, accessible, and secure digital applications. Ready for junior developer and engineering roles.',
-  linkedin: '[LINKEDIN URL]',
+  linkedin: 'https://www.linkedin.com/in/johnearl-campos-39a609385/?isSelfProfile=true',
   github: 'https://github.com/camposjohnearl-byte',
   portfolio: '[PORTFOLIO URL]'
 };
